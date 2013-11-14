@@ -90,7 +90,19 @@ p {
   color: #fff;
   text-decoration: none;
 }
-
+/* User index */
+.users {
+	list-style: none;
+	margin: 0;
+	li{
+		overflow: auto;
+		padding: 10px 0;
+		border-top: 1px solid $grayLighter;
+		&:last-child {
+			border-bottom: 1px solid $grayLighter;
+		}
+	}
+}
 /* footer */
 
 footer {
@@ -142,6 +154,15 @@ aside {
 	}
 }
 
+#info{
+	float: right;
+	padding:4px;
+	padding-right:10px;
+	margin-right: 20px;
+	border: 2px solid #bbb;
+
+}
+
 .gravatar {
 	float: left;
 	margin-right:10px;
@@ -172,4 +193,10 @@ input {
 .field_with_errors {
 	@extend .control-group;
 	@extend .error;
+}
+
+/* text elements */
+
+#text1 {
+	text-shadow: 1px 1px;
 }

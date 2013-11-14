@@ -2,7 +2,7 @@
 <h1>Sign up</h1>
 
 <div class="row">
-  <div class="span6 offset3">
+  <div class="span5 offset3">
     <%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages' %>
 
@@ -18,7 +18,19 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+      <%= f.submit "Create my account", class: "btn btn-large btn-danger" %>
     <% end %>
   </div>
+
+  <div id="info">
+    <div class="span3">
+      <p>
+       There comes a time in every (wo)man's life that (s)he must face up to the challenge of becoming. Will (s)he be a (wo)man? Or will (s)he be a beast... 
+      </p>
+      <p>
+       This moment.<b> Right here. Right now. </b>Is the moment <b><u>you</u></b> will make that choice...
+      </p>
+    </div>
 </div>
+</div>
+
